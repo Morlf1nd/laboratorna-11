@@ -1,2 +1,4 @@
 ﻿  laboratorna-11.cpp
+D:\vs code\project\laboratorna-11\laboratorna-11.cpp(32,17): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
+D:\vs code\project\laboratorna-11\laboratorna-11.cpp(6,9): warning C4101: a: неиспользованная локальная переменная
   laboratorna-11.vcxproj -> D:\vs code\project\laboratorna-11\x64\Debug\laboratorna-11.exe
