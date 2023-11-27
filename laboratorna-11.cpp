@@ -2,22 +2,32 @@
 
 int main() {
     setlocale(0, ".1251");
-    int a, b, c;
-    std::cout << "Введіть число a: ";
-    std::cin >> a;
-    std::cout << "Введіть число b: ";
-    std::cin >> b;
-    std::cout << "Введіть число c: ";
-    std::cin >> c;
-    if (c == 0) {
-        std::cout << "Помилка: число c повинно бути ненульовим." << std::endl;
-        return 0;
-    }
-    std::cout << "Цілі числа від " << a << " до " << b << ", кратні " << c << std::endl;
-    for (int i = a; i <= b; ++i) {
-        if (i % c == 0) {
-            std::cout << i << " " << std::endl;
+    long long number;
+    std::cout << "Введіть число: ";
+    std::cin >> number;
+
+    int one = 0;
+    int zero = 0;
+
+
+    while (number > 0) {
+
+        int chislo = number % 10;
+
+        if (chislo == 1) {
+            one++;
         }
+        if (chislo == 0) {
+            zero++;
+        }
+
+
+        number /= 10;
     }
+
+
+    std::cout << "Кількість 1: " << one << std::endl;
+    std::cout << "Кількість 0: " << zero << std::endl;
+
     return 0;
 }
